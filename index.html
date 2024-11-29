@@ -4,8 +4,24 @@
     <title>Document</title>
     <link rel="stylesheet" href="Style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="Script.js"></script>
 </head>
 <body>
+
+    <div id="popup" class="popup">
+        <div class="popup-content">
+          <h2>Welcome to Our Website!</h2>
+          <p>Sign up now to get 10% off your first order!</p>
+          <form name="emailForm">
+            <input type="email" name="emailInput" placeholder="Enter Your Email" required>
+            
+          </form>
+          <button2 onclick="closePopup()" name="Submit">Submit</button2>
+          <button onclick="closePopup()" name="Close">Close</button>
+        </div>
+        
+
+      </div>
 
     <header class="header">
 
@@ -13,12 +29,12 @@
             Beans<span>&Beyond</span>
         </a>
 
-        <i class="bx bx-menu" id="menu-icon"></i>
+        
 
         <nav class="navbar">
             <a href="#home" class="active">Home</a>
             <a href="#about">About Us</a>
-            <a href="#coffees">Coffees</a>
+            <a href="#Coffees">Coffees</a>
             <a href="#reviews">Reviews</a>
             <a href="#contact">Contact</a>
         </nav>
@@ -30,13 +46,9 @@
         <div class="home-content">
             <h3>Welcome to</h3>
             <h1>Beans<span>&Beyond</span></h1>
-
-            <p>Experience the best coffee in town, made with love and passion.
-                At our coffee shop, we serve the finest coffee made from the best beans.
-                 Whether you're looking for a quick caffeine fix or a cozy place to relax,
-                  we have something for everyone! </p>
-
-            <a href="#" class="button">Order Now</a>      
+            <p>"Brewed to Perfection, Delivered to Your Door!"<br>
+                 Experience the luxury of artisan coffee crafted to perfection and brought straight to your doorstep, so every sip feels like a café experience.</p>
+            <a href="#Coffees" class="button">Order Now</a>      
         </div>
     </section>
     
@@ -45,12 +57,9 @@
         <div class="about-content">
             <h2 class="heading">About<span>Us</span></h2>
 
-            <p>Experience the best coffee in town, made with love and passion.
-                At our coffee shop, we serve the finest coffee made from the best beans.
-                 Whether you're looking for a quick caffeine fix or a cozy place to relax,
-                  we have something for everyone! </p>
-
-            <a href="#" class="button">Read More</a>      
+            <p>Our coffee is crafted with precision and passion, starting with hand-selected beans sourced from sustainable farms around the world. Each batch is expertly roasted to highlight its unique flavor notes, ensuring a perfect balance of aroma, taste, and freshness. From farm to cup, we prioritize quality at every step, so you can enjoy a brew that’s rich, smooth, and ethically produced. Whether it’s a bold espresso or a comforting latte, every sip tells a story of dedication and excellence.</p>
+            <h3>Learn where we source our coffee beans from!</h3>
+            <a href="https://naivo.in/coffee-beans-suppliers/?srsltid=AfmBOorgVZ0t6o_P3-TZEUUidvcbUg4yLPB79YaXKgSCf-I9jf50ndxp" target="_blank" class="button">Source</a>      
         </div>
     </section>
 
@@ -59,38 +68,39 @@
 
         <div class="coffees-container">
             <div class="coffees-box">
-                <img src="espresso.jpeg" alt="espresso">
+                <img src="newEspresso1.jpg" alt="espresso">
                 <div class="coffees-info">
                     <h4>Espresso</h4>
                     <p>A rich and bold coffee shot.</p>
                     <a href="#">
                         <i class='bx bxs-coffee'></i>
                     </a>
+                    <button>Add To Cart!</button>
 
                 </div>
             </div>
 
             <div class="coffees-box">
-                <img src="Cappuccino.jpeg" alt="cappuccino">
+                <img src="newCappuccino.jpg" alt="cappuccino">
                 <div class="coffees-info">
                     <h4>Cappuccino</h4>
                     <p>Espresso with steamed milk and foam.</p>
                     <a href="#">
                         <i class='bx bxs-coffee'></i>
                     </a>
-
+                    <button>Add To Cart!</button>
                 </div>
             </div>
 
             <div class="coffees-box">
-                <img src="latte.jpeg" alt="Latte">
+                <img src="newLatte.jpg" alt="Latte">
                 <div class="coffees-info">
                     <h4>Latte</h4>
                     <p>Espresso with steamed milk and a light layer of foam.</p>
                     <a href="#">
                         <i class='bx bxs-coffee'></i>
                     </a>
-
+                    <button>Add To Cart!</button>
                 </div>
             </div>
         </div>
@@ -101,36 +111,36 @@
         <div class="reviews-container">
             <div class="reviews-box">
                 <i class='bx bx-user-circle'></i>
-                <h3>Reviews 1</h3>
-                <p>Espresso with steamed milk and foam.</p>
-                <a href="#" class="button">Read More</a>
+                <h3>Aditi_Jena</h3>
+                <p>The best coffee I’ve ever had! Fresh, flavorful, and delivered on time.</p>
+                <a href="#" class="button">Give your review</a>
             </div>
 
             <div class="reviews-box">
                 <i class='bx bx-user-circle'></i>
-                <h3>Reviews 2</h3>
-                <p>Espresso with steamed milk and foam.</p>
-                <a href="#" class="button">Read More</a>
+                <h3>Reet_Jain</h3>
+                <p>The quality is unmatched, and the customer service is fantastic!</p>
+                <a href="#" class="button">Give your review</a>
             </div>
 
             <div class="reviews-box">
                 <i class='bx bx-user-circle'></i>
-                <h3>Reviews 3</h3>
-                <p>Espresso with steamed milk and foam.</p>
-                <a href="#" class="button">Read More</a>
+                <h3>Moksh_Jain</h3>
+                <p>My mornings are incomplete without this coffee. Highly recommend!</p>
+                <a href="#" class="button">Give your review</a>
             </div>
 
             <div class="reviews-box">
                 <i class='bx bx-user-circle'></i>
-                <h3>Reviews 4</h3>
-                <p>Espresso with steamed milk and foam.</p>
-                <a href="#" class="button">Read More</a>
+                <h3>Mahek_Kala</h3>
+                <p>This coffee has changed my mornings! Smooth, rich, and perfect every time</p>
+                <a href="#" class="button">Give your review</a>
             </div>
 
         </div>
     </section>
 
-    <section class="Contact" id="Contact">
+    <section class="contact" id="contact">
         <h2 class="heading">Contact<span>Us</span></h2>
         <form action="#">
             <div class="input-box">
@@ -151,9 +161,9 @@
 
     <footer class="footer">
         <div class="social">
-            <a href="#"><i class='bx bxl-instagram-alt'></i></a>
-            <a href="#"><i class='bx bxl-facebook-circle' ></i></a>
-            <a href="#"><i class='bx bxl-twitter' ></i></a>
+            <a href="https://www.instagram.com/accounts/login/?hl=en" target="_blank"><i class='bx bxl-instagram-alt'></i></a>
+            <a href="https://www.facebook.com/login/" target="_blank"><i class='bx bxl-facebook-circle' ></i></a>
+            <a href="https://www.reddit.com/login/" target="_blank"><i class='bx bxl-reddit'></i></a>
 
         </div>
 
